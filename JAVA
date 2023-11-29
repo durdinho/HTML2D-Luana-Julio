@@ -1,0 +1,12 @@
+function mostrarDetalhes(nome, preco, imagem) {
+    var detalhesProduto = document.getElementById("detalhes-produto");
+    var produtoNome = document.getElementById("produto-nome");
+    var produtoPreco = document.getElementById("produto-preco");
+    var produtoImagem = document.getElementById("produto-imagem");
+
+    produtoNome.textContent = nome;
+    produtoPreco.textContent = preco;
+    produtoImagem.src = imagem;
+
+    detalhesProduto.style.display = "block";
+}
